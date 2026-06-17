@@ -13,10 +13,10 @@ import HeroSlider from '@/components/HeroSlider';
 
 export default function HomePage() {
   const trustIndicators = [
-    'Terapis Profesional & Bersertifikasi',
-    'Produk Organik Premium Alami',
-    'Ruangan Nyaman, Bersih & Privat',
-    'Sentuhan Istimewa, Kenyamanan Tanpa Batas'
+    'Terapis Profesional & Bersertifikasi.',
+    'Produk Organik Premium Alami.',
+    'Ruangan Nyaman, Bersih & Privat.',
+    'Sentuhan Istimewa, Kenyamanan Tanpa Batas.'
   ];
 
   const featuredServices = services.filter(s => ['hot-stone-massage', 'balinese-massage', 'premium-facial'].includes(s.slug));
