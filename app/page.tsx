@@ -16,7 +16,7 @@ export default function HomePage() {
     'Terapis Profesional & Bersertifikasi',
     'Produk Organik Premium Alami',
     'Ruangan Nyaman, Bersih & Privat',
-    'Pelayanan Standard Resor Bintang Lima'
+    'Sentuhan Istimewa, Kenyamanan Tanpa Batas'
   ];
 
   const featuredServices = services.filter(s => ['hot-stone-massage', 'balinese-massage', 'premium-facial'].includes(s.slug));
