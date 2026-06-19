@@ -39,7 +39,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'name': service.title,
-    'image': `https://claraspabali.com${service.image}`,
+    'image': `https://claraspabali.biz.id${service.image}`,
     'description': service.description,
     'offers': {
       '@type': 'AggregateOffer',

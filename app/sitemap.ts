@@ -3,7 +3,7 @@ import { services } from '@/data/services';
 import { blogPosts } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://claraspabali.com';
+  const baseUrl = 'https://claraspabali.biz.id';
 
   const staticPages = [
     '',

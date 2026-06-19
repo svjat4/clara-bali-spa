@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   },
   description: 'Rasakan kemewahan relaksasi spa profesional di Clara Spa Bali. Kami menyediakan Autentik Balinese Massage, Premium Facial, Eyelash Extension, dan Nail Art berstandar resort bintang lima.',
   keywords: ['Spa Bali', 'Bali Spa', 'Spa Terbaik di Bali', 'Massage Bali', 'Balinese Massage Bali', 'Luxury Spa Bali', 'Spa Profesional Bali', 'Relaksasi Spa Bali'],
-  metadataBase: new URL('https://claraspabali.com'),
+  metadataBase: new URL('https://claraspabali.biz.id'),
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://claraspabali.com',
+    url: 'https://claraspabali.biz.id',
     siteName: 'Clara Spa Bali',
     images: [{
       url: '/images/og-main.jpg',
@@ -37,9 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'DaySpa',
     'name': 'Clara Spa Bali',
-    'image': 'https://claraspabali.com/images/og-main.jpg',
-    '@id': 'https://claraspabali.com/#organization',
-    'url': 'https://claraspabali.com',
+    'image': 'https://claraspabali.biz.id/images/og-main.jpg',
+    '@id': 'https://claraspabali.biz.idm/#organization',
+    'url': 'https://claraspabali.biz.id',
     'telephone': '087897465067',
     'priceRange': '$$$',
     'address': {

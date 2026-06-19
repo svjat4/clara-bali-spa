@@ -43,7 +43,7 @@ export default async function BlogPostPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     'headline': post.title,
-    'image': `https://claraspabali.com${post.image}`,
+    'image': `https://https://claraspabali.biz.id${post.image}`,
     'datePublished': '2026-06-16T00:00:00Z',
     'author': {
       '@type': 'Organization',

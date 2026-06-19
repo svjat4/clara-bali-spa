@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/'],
     },
-    sitemap: 'https://claraspabali.com/sitemap.xml',
+    sitemap: 'https://claraspabali.biz.id/sitemap.xml',
   };
 }
