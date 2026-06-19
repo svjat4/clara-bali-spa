@@ -3,8 +3,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import JsonLd from '@/components/JsonLd';
-import "./globals.css"; // Pastikan konfigurasi @tailwind base; dsb tersedia di sini
+import "./globals.css"; 
+import { GoogleAnalytics } from '@next/third-parties/google'; // Import GA sudah diaktifkan
 
+// Metadata lengkap dengan SEO & Open Graph
 export const metadata: Metadata = {
   title: {
     default: 'Clara Spa Bali - Luxury Spa & Authentic Balinese Massage Terbaik di Bali',
@@ -38,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@type': 'DaySpa',
     'name': 'Clara Spa Bali',
     'image': 'https://claraspabali.biz.id/images/tentang.webp',
-    '@id': 'https://claraspabali.biz.idm/#organization',
+    '@id': 'https://claraspabali.biz.id/#organization', // Typo .biz.idm sudah diperbaiki
     'url': 'https://claraspabali.biz.id',
     'telephone': '087897465067',
     'priceRange': '$$$',
@@ -52,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': -8.6500, // Placeholder koordinat Bali asli sesuai lokasi
+      'latitude': -8.6500, 
       'longitude': 115.2167
     },
     'openingHoursSpecification': {
@@ -68,9 +70,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased bg-white text-textDark min-h-screen flex flex-col">
         <JsonLd data={localBusinessSchema} />
         <Navbar />
+        
         <main className="flex-grow">{children}</main>
+        
         <Footer />
         <FloatingWhatsApp />
+        
+        {/* Google Analytics Terpasang Sempurna */}
+        <GoogleAnalytics gaId="G-F15RRM7MCV" />
       </body>
     </html>
   );
