@@ -5,6 +5,7 @@ import { blogPosts } from '@/data/blog';
 import { ArrowLeft, User, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import parse from 'html-react-parser'; // 1. Impor parser
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -43,7 +44,7 @@ export default async function BlogPostPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     'headline': post.title,
-    'image': `https://https://claraspabali.biz.id${post.image}`,
+    'image': `https://claraspabali.biz.id${post.image}`,
     'datePublished': '2026-06-16T00:00:00Z',
     'author': {
       '@type': 'Organization',
@@ -85,8 +86,9 @@ export default async function BlogPostPage({ params }: Props) {
           />
         </div>
 
+        {/* 2. Perubahan ada di sini: membungkus konten dengan fungsi parse() */}
         <div className="prose prose-stone max-w-none text-gray-600 leading-relaxed font-light text-base space-y-6">
-          <p>{post.content}</p>
+          {parse(post.content)}
         </div>
       </div>
     </div>
