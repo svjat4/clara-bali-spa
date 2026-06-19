@@ -53,9 +53,22 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      
+      {/* Bagian Copyright dengan Backlink Halus */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 space-y-4 sm:space-y-0">
         <p>© 2026 Clara Spa Bali. Seluruh Hak Cipta Dilindungi.</p>
-        <p>Premium Wellness & Beauty Solution.</p>
+        <p className="flex items-center gap-1.5">
+          Premium Wellness & Beauty Solution. <span className="opacity-40 ml-1">|</span> Partner:{' '}
+          <a 
+            href="https://jajananmagetan.biz.id" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-primary transition-colors font-medium"
+            title="Kunjungi Jajanan Magetan"
+          >
+            Jajanan Magetan
+          </a>
+        </p>
       </div>
     </footer>
   );

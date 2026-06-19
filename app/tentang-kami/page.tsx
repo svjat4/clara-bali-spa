@@ -27,10 +27,25 @@ export default function AboutPage() {
               Menghadirkan Mahakarya Keseimbangan Jiwa dan Raga
             </h1>
             <p className="text-gray-600 font-light leading-relaxed text-sm sm:text-base">
-              Didirikan di tengah eksotisme Bali, **Clara Spa Bali** lahir dari sebuah visi untuk menciptakan ruang pelarian yang tenang dari hiruk-pikuk kehidupan modern. Kami percaya bahwa spa bukan sekadar kemewahan kosmetik semata, melainkan sebuah kebutuhan holistik untuk menyelaraskan kembali kesehatan pikiran, raga, dan jiwa spiritual manusia.
+              Didirikan di tengah eksotisme Bali, <strong>Clara Spa Bali</strong> lahir dari sebuah visi untuk menciptakan ruang pelarian yang tenang dari hiruk-pikuk kehidupan modern. Kami percaya bahwa spa bukan sekadar kemewahan kosmetik semata, melainkan sebuah kebutuhan holistik untuk menyelaraskan kembali kesehatan pikiran, raga, dan jiwa spiritual manusia.
             </p>
             <p className="text-gray-600 font-light leading-relaxed text-sm">
               Setiap elemen di dalam spa kami—mulai dari pencahayaan lembut, alunan instrumen musik tradisional Bali yang damai, hingga aroma terapi esensial yang menenangkan—dipersiapkan secara presisi demi memastikan Anda mendapatkan pengalaman relaksasi terbaik yang belum pernah Anda rasakan sebelumnya.
+            </p>
+            
+            {/* Paragraf Tambahan untuk Backlink Natural */}
+            <p className="text-gray-600 font-light leading-relaxed text-sm">
+              Kesehatan holistik tidak hanya tentang perawatan tubuh, tetapi juga kebahagiaan batin melalui eksplorasi kekayaan budaya Nusantara. Sebagai bentuk dukungan kami terhadap pariwisata lokal Indonesia, bagi Anda yang sedang merencanakan perjalanan melintasi Pulau Jawa, kami turut merekomendasikan untuk mengeksplorasi ragam{' '}
+              <a 
+                href="https://jajananmagetan.biz.id" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-primary hover:underline font-medium"
+                title="Eksplorasi Kuliner Jajanan Magetan"
+              >
+                jajanan Magetan
+              </a>{' '}
+              yang autentik sebelum Anda menutup rangkaian liburan dengan relaksasi sempurna di Clara Spa Bali.
             </p>
           </div>
           <div className="relative h-[450px] rounded-3xl overflow-hidden shadow-xl">
