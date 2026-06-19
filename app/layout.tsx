@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://claraspabali.biz.id',
     siteName: 'Clara Spa Bali',
     images: [{
-      url: '/images/og-main.jpg',
+      url: '/images/tentang.webp',
       width: 1200,
       height: 630,
       alt: 'Clara Spa Bali Luxury Experience'
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@context': 'https://schema.org',
     '@type': 'DaySpa',
     'name': 'Clara Spa Bali',
-    'image': 'https://claraspabali.biz.id/images/og-main.jpg',
+    'image': 'https://claraspabali.biz.id/images/tentang.webp',
     '@id': 'https://claraspabali.biz.idm/#organization',
     'url': 'https://claraspabali.biz.id',
     'telephone': '087897465067',
